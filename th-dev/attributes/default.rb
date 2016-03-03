@@ -12,6 +12,15 @@ default['sublime-text']['version']['generation'] = 3
 default['sublime-text']['version']['id'] = "Build 3103"
 
 
+### ZIP application installs
+#
+default['zip_app']['apps'] = [
+  { 'name'      => 'slack',
+    'source'    => 'https://slack-ssb-updates.global.ssl.fastly.net/mac_public_releases/slack-2.0.0.zip'
+  }
+]
+
+
 ### Advanced options
 ###
 

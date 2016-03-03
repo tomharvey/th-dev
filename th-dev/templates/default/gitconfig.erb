@@ -1,0 +1,34 @@
+[user]
+    name = Thomas Harvey
+    email = tom@alush.co.uk
+
+[core]
+    editor = vim
+    pager = less -r
+    excludesfile = ~/.gitignore
+
+[color]
+    ui = true
+
+[alias]
+    co = checkout
+    lol = log --pretty=oneline --abbrev-commit --graph --decorate --all
+    st = status -sb
+    word-diff = diff --color-words --word-diff-regex='[^[:space:]]|[A-z_][A-z_]+'
+    diffi = diff --ignore-space-at-eol
+    latest = rev-parse HEAD
+    ; latest-tag = describe --abbrev=0 origin/master
+    latest-tag = !git tag |grep -E '^v[0-9]+$' |cut -c 2-| sort -n |tail -n 1
+    recent-branches = !git for-each-ref --sort=-committerdate refs/heads/ --format='%(refname:short):%(committerdate:relative)' |column -t -s ':'
+    merge-upstream = merge @{u}
+    vim-conflict = !git ls-files -m |sort -u |xargs mvim
+
+[push]
+    default = upstream
+
+[advice]
+    statusHints = false
+[rerere]
+	enabled = true
+[help]
+	autocorrect = 15
