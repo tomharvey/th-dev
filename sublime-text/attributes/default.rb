@@ -7,12 +7,12 @@
 # MIT License
 #
 
-default['sublime-text']['version']['generation'] = 2
+default['sublime-text']['version']['generation'] = 3
 default['sublime-text']['version']['id'] = case node['sublime-text']['version']['generation']
                                            when 2
                                              "2.0.2"
                                            when 3
-                                             "Build 3065"
+                                             "Build 3103"
                                            end 
 
 default['sublime-text']['platform']['release'] = 'trusty'
