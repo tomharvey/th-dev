@@ -8,4 +8,6 @@ version          '0.1.0'
 
 depends "sublime-text"
 depends "rvm"
-depedns "virtualbox"
+depends "virtualbox"
+depends "dmg"
+depends "zip_app"
