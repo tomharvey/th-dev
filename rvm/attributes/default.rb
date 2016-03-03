@@ -42,7 +42,12 @@ default['rvm']['user_gems'] = Hash.new
 default['rvm']['rvmrc']         = Hash.new
 
 # a list of user hashes, each an isolated per-user RVM installation
-default['rvm']['user_installs'] = []
+node['rvm']['user_installs'] = [
+  { 'user'          => 'thomasharvey',
+    'default_ruby'  => 'rbx',
+    'rubies'        => ['2.2.4', '1.9.2', '1.8.7']
+  }
+]
 
 # system-wide installer options
 default['rvm']['installer_url'] = "https://get.rvm.io"
