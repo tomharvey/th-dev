@@ -1,6 +1,6 @@
 name             'th-dev'
-maintainer       'YOUR_COMPANY_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'Tom Harvey'
+maintainer_email 'tom@alush.co.uk'
 license          'All rights reserved'
 description      'Installs/Configures th-dev'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
@@ -11,3 +11,6 @@ depends "rvm"
 depends "virtualbox"
 depends "dmg"
 depends "zip_app"
+depends "xquartz"
+depends "mac_os_x"
+depends "nodejs"

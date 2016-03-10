@@ -15,9 +15,20 @@ default['sublime-text']['version']['id'] = "Build 3103"
 ### ZIP application installs
 #
 default['zip_app']['apps'] = [
-  { 'name'      => 'slack',
+  { 'name'      => 'Slack',
     'source'    => 'https://slack-ssb-updates.global.ssl.fastly.net/mac_public_releases/slack-2.0.0.zip'
-  }
+  },
+  { 'name'		=> 'PSequel',
+  	'source'	=> 'https://dl.dropboxusercontent.com/u/60578634/PSequel.1.4.3.app.zip'
+  },
+  { 'name'		=> 'SQLPro for MSSQL',
+  	'source'	=> 'https://d3fwkemdw8spx3.cloudfront.net/mssql/SQLProMSSQL.1.0.25i.app.zip'
+  },
+  { 'name' 		=> 'Cyberduck',
+    'source'	=> 'https://update.cyberduck.io/Cyberduck-4.8.3.19083.zip'
+  },
+  { 'name'		=> 'GitHub',
+  	'source'	=> 'https://mac-installer.github.com/mac/GitHub%20Desktop%20217.zip'}
 ]
 
 
