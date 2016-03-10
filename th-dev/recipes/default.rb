@@ -14,6 +14,8 @@ include_recipe "zip_app::default"
 include_recipe "xquartz::default"
 include_recipe "nodejs"
 
+nodejs_npm "bootlint"
+
 
 template '/Users/thomasharvey/.gitconfig' do
   source 'gitconfig.erb'

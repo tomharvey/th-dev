@@ -26,9 +26,7 @@ default['zip_app']['apps'] = [
   },
   { 'name' 		=> 'Cyberduck',
     'source'	=> 'https://update.cyberduck.io/Cyberduck-4.8.3.19083.zip'
-  },
-  { 'name'		=> 'GitHub',
-  	'source'	=> 'https://mac-installer.github.com/mac/GitHub%20Desktop%20217.zip'}
+  }
 ]
 
 
