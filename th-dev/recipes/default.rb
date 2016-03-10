@@ -12,6 +12,7 @@ include_recipe "rvm::user"
 include_recipe "virtualbox"
 include_recipe "zip_app::default"
 include_recipe "xquartz::default"
+include_recipe "nodejs"
 
 
 template '/Users/thomasharvey/.gitconfig' do
