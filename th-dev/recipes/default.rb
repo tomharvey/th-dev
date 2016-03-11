@@ -2,7 +2,7 @@
 # Cookbook Name:: th-dev
 # Recipe:: default
 #
-# Copyright 2016, YOUR_COMPANY_NAME
+# Copyright 2016, Tom Harvey
 #
 # All rights reserved - Do Not Redistribute
 #
@@ -13,8 +13,10 @@ include_recipe "virtualbox"
 include_recipe "zip_app::default"
 include_recipe "xquartz::default"
 include_recipe "nodejs"
+include_recipe "vagrant"
 
 nodejs_npm "bootlint"
+nodejs_npm "jshint"
 
 
 template '/Users/thomasharvey/.gitconfig' do
