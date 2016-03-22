@@ -40,6 +40,12 @@ remote_file '/Users/thomasharvey/Library/Application Support/Sublime Text 3/Inst
     action :create
 end
 
+package 'python' do
+  action    :install
+end
+
+python_pip "pylint"
+
 dmg_package 'Tunnelblick' do
   source   'https://tunnelblick.net/release/Tunnelblick_3.5.8_build_4270.4530.dmg'
   action   :install
