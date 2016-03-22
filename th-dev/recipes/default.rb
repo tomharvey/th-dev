@@ -45,6 +45,7 @@ package 'python' do
 end
 
 python_pip "pylint"
+python_pip "flake8"
 
 dmg_package 'Tunnelblick' do
   source   'https://tunnelblick.net/release/Tunnelblick_3.5.8_build_4270.4530.dmg'
